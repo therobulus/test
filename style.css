@@ -1,0 +1,772 @@
+.webpage {
+    max-width: 992px;
+    margin: auto;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+html{scroll-behavior: smooth;}
+
+.list {
+    list-style-type: none;
+}
+
+.list-element {
+    display: inline;
+}
+
+
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    margin-left: auto;
+}
+
+.list-element {
+    padding-left: 20px;
+    padding-right: 2px;
+    font-size: 15px;
+}
+
+#booki-logo{height: 45px;
+width: 95px;}
+
+.acc-act-button:hover{
+    color: blue;
+    border-top: 5px solid blue;
+    padding-top: 30px;
+    border-width: thin
+
+}
+
+h1 {
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 14px;
+}
+
+.clickable{text-decoration: none;
+border: none;
+color: black;
+
+}
+
+
+
+#search-text{text-decoration: none;
+color: white;
+border: none;}
+
+.m-glass{display: none;}
+
+#search-button {
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(43, 71, 197);
+    padding: 11px;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    font-weight: bolder;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    font-family: 'Raleway', sans-serif;
+    border-left: none;
+    border-right: none;
+    font-weight: bolder;
+    border-color: #F2F2F2;
+    outline: none;
+    width: 240px;
+    padding: 10px;
+    color: black;
+    border-style: solid;
+}
+
+.filter-text {
+    font-weight: bolder;
+    text-align: center;
+    padding-left: 10px;
+}
+
+#filters-name{
+font-weight: bolder;
+}
+
+.filter-icon-list{display: flex;
+flex-direction: row;
+gap: 20px;
+flex-wrap: wrap;}
+
+.fa-location-dot {
+    font-family: 'Raleway', sans-serif;
+    background-color: #F2F2F2;
+    padding: 12px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.filters {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    padding-top: 20px;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px
+}
+
+.filter-container {
+    border-radius: 150px;
+    background-color: white;
+    height: 38px;
+    width: 150px;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px;
+    border-color: #F2F2F2;
+    border-style: solid;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.filter-container:hover {
+    border-color: #0065FC;
+}
+
+.filter-icon {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-color: white;
+    border-left: none;
+    position: relative;
+    right: 10px;
+}
+
+.info {
+    width: 420px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#info-sign {
+    display: flex;
+    border-style: solid;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    color: #0065FC;
+    border-color: #F2F2F2;
+    border-width: thin;
+    float: left;
+    margin-right: 10px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+.accommodations {
+    background-color: #F2F2F2;
+    flex:2;
+    border-radius: 15px;
+    flex-basis: 600px;
+    flex-wrap: wrap;
+}
+
+.popular {
+    background-color: #F2F2F2;
+    flex:1;
+    border-radius: 15px;
+    flex-basis: 300px;
+}
+
+
+h2 {
+    padding-left: 30px;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+.Marseille {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-shrink: 2;
+}
+
+.marseille-photos {
+    flex-grow: 1;
+    flex-basis: 160px;
+    background-color: white;
+    height: 150px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: black;
+    padding: 0%;
+}
+
+.marseille-photos:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.575);
+    transition: 0.5s;
+}
+
+
+.Marseille-rooms {
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    object-fit: cover;
+}
+
+.photo-frame {
+    margin-top: 5px;
+    height: 80px;
+    max-width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+
+.frame-text {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+
+.hotel-name {
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.hotel-description {
+    font-size: 11px;
+    padding-top: 5px;
+}
+
+.euro {
+    font-weight: bolder;
+}
+
+.stars {
+    padding-top: 5px;
+    font-size: 10px;
+    color: #0065FC;
+}
+
+.grey-star {
+    color: #dfdfdf;
+}
+
+#showmore {
+    padding-left: 30px;
+    padding-top: 35px;
+    height: 20px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.most-popular {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 30px;
+}
+
+#star {
+    margin-left: auto;
+}
+
+.most-popular-rooms {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-shrink: 2;
+}
+
+.most-popular-photos {
+    flex-grow: 1;
+    flex-basis: 110px;
+    background-color: white;
+    height: 80px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: black;
+    padding: 0%;
+}
+
+.most-popular-photos:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.575);
+    transition: 0.5s;
+}
+
+.most-popular-frame {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 100px;
+    max-height: 100%;
+    flex-shrink: 0;
+
+}
+
+
+.most-popular-images {
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    object-fit: cover;
+}
+
+.most-popular-hotel {
+    font-size: 13px;
+    font-weight: bolder;
+    padding-bottom: 16px;
+}
+
+.most-popular-description {
+    padding-bottom: 16px;
+    font-size: 11px;
+
+}
+
+.most-popular-textbox {
+    padding: 10px;
+}
+
+
+
+.Marseille-activities {
+    height: 500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.activities-container {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+
+
+.activities-photos {
+    flex:1;
+    background-color: white;
+    height: 100%;
+    border-radius: 15px;
+    flex-basis: 0%;
+    text-decoration: none;
+    color: black;
+    padding: 0%;
+
+
+}
+
+.activity-frame {
+    height: 350px;
+    width: auto;
+}
+
+.activity-location {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.activity-textbox {
+    font-weight: bolder;
+    padding: 12px;
+    height: 20px;
+    
+}
+
+#activities-photos-flex1 {
+    display: flex;
+    flex-direction: column;
+    height: 390px;
+    width: 100%;
+    gap: 30px;
+    flex: 1;
+
+}
+
+.big {
+    
+    height: 220px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    padding: 0%;
+}
+
+.big:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.575);
+    transition: 0.5s;
+}
+
+.small {
+    
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    align-self: start;
+    width: 100%;
+    height: 150px;
+    text-decoration: none;
+    color: black;
+    padding: 0%;
+}
+
+.small:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.575);
+    transition: 0.5s;
+}  
+
+
+.bigger {
+    height:75%;
+    width: auto;
+}
+
+.blackshadow {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.blackshadow:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.575);
+    transition: 0.5s;
+}
+
+.smaller-frame {
+    height: 100px;
+}
+
+.bigger-frame{height: 80%;}
+
+
+#activities-photos-flex2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 390px;
+    width: 100%;
+    flex:1;
+}
+
+.equal {
+    height:183px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    padding: 0%;
+}
+
+.equal:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.575);
+    transition: 0.5s;
+}
+
+footer{ display: flex;
+    flex-direction: row;
+    height: 200px;
+    background-color: #F2F2F2;
+}
+
+
+.footer-section{flex: 1;
+    padding-left: 30px;
+height: 100%;}
+
+.footer-list{
+    list-style-type: none;
+    padding-left: 0px;
+    font-size: 14px;
+   
+}
+
+.footer-list-element{
+    margin-bottom: 8px;
+}
+
+@media all and (max-width:768px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo{text-align: center;
+    padding-left: 80px;}
+
+    .nav a{text-align: center;
+    justify-content: center;
+align-items: center;
+margin:0;
+background-color: red;}
+
+.acc-act-button:hover{
+    color: blue;
+    border-bottom: 20px solid blue;
+    padding-top: 30px;
+    border-width: thin;
+    border-top: none;
+    
+}
+
+a{
+    border-bottom: 20px solid #F2F2F2;
+    padding-top: 30px;
+    border-width: thin;
+    border-top: none;}
+
+
+nav{margin-left: 0;}
+
+.list {
+    list-style-type: none;
+    padding-left: 0px;
+    word-spacing:30px ;
+    text-align: center;
+}
+
+.list-element {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 20px;
+}
+
+
+.wrapper {
+    justify-content: center;
+    
+}
+
+
+input {
+    width: 100%;
+}
+
+
+.filters {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.accommodations {
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+.popular{padding: 0%;}
+
+footer{ display: flex;
+    flex-direction: column;
+    height: inherit;
+    background-color: #F2F2F2;
+}
+
+.main {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.marseille-photos {
+    flex-grow: 3;
+    flex-basis: 500px;
+    background-color: white;
+    height: 200px;
+    border-radius: 15px;
+    flex-shrink: 1;
+}
+
+.photo-frame {
+    margin-top: 5px;
+    height: 130px;
+    max-width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+
+.activities-container {
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+
+.Marseille-activities {
+    height: 100%;}
+
+
+#search-text{display:none;}
+
+.m-glass{display:contents; 
+color: white;
+text-decoration: none ;}
+
+.info {width: inherit;}
+
+.big {
+    height:183px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.small {
+    height:183px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.equal {
+    height:183px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.smaller-frame {
+    height:80%;
+}
+
+.activity-frame {
+    height: 138px;
+    width: auto;
+}
+
+#search-button{border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+position: relative;
+right:10px}
+
+.most-popular-photos {
+    flex-grow: 1;
+    flex-basis: 110px;
+    background-color: white;
+    height: 130px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+#filters-name{
+    font-weight: bolder;
+}
+
+.most-popular-frame{height: 120px;}
+
+
+
+}
+
+@media all and (max-width:992px)
+{
+
+
+.Marseille-activities {height: 100%;}
+
+
+.activities-container {height:100%;}
+
+
+ .main {height: 100%;}
+
+.activity-textbox { font-size: 14px;}
+
+.accommodations{padding-bottom: 20px;}
+
+.popular{padding-bottom: 20px;}
+
+.filters {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+
+}
+
+@media all and (max-width:330px)
+
+{
+    .most-popular-photos {
+           height: 180px; 
+    }
+
+ .logo{padding-left: 30px;
+}
+
+}
